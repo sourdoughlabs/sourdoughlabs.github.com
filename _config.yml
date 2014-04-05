@@ -1,0 +1,8 @@
+lsi: false
+markdown: rdiscount
+pygments: true
+permalink: /:year/:month/:day/:title
+paginate: 10
+exclude: ["Rakefile", "upload.rb", "ftp-info.txt", "LICENSE.txt", "README.md", "CNAME"]
+title: Sourdough Labs Research And Development Corp. - Lower Mainland Software Developers Rails
+url: http://sourdoughlabs.com
