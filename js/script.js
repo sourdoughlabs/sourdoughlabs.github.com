@@ -30,14 +30,6 @@ function fadedEls(el, shift) {
 
 (function($) {
     $(function() {
-        var videobackground = new $.backgroundVideo($('#bgVideo'), {
-            "align" : "centerXY",
-            "path" : "video/",
-            "width": 1280,
-            "height": 720,
-            "filename" : "preview",
-            "types" : ["mp4", "ogg", "webm"]
-        });
         // Sections height & scrolling
         $(window).resize(function() {
             var sH = $(window).height();
@@ -83,28 +75,7 @@ function fadedEls(el, shift) {
             })($('.screen'));
         }
 
-       
-        (function(el) {
-            el.css('left', '-100%');
-
-            $(window).resize(function() {
-                if (!el.hasClass('ani-processed')) {
-                    el.data('scrollPos', el.offset().top - $(window).height() + el.outerHeight());
-                }
-            }).scroll(function() {
-                if (!el.hasClass('ani-processed')) {
-                    if ($(window).scrollTop() >= el.data('scrollPos')) {
-                        el.addClass('ani-processed');
-                        el.animate({
-                            left : 0
-                        }, 500);
-                    }
-                }
-            });
-        })($('.content-11 > .container'));
-
         $(window).resize().scroll();
-
     });
 
     $(window).load(function() {

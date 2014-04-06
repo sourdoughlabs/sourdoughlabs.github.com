@@ -1643,7 +1643,7 @@ section * {
 }
 .content-23 {
   overflow: hidden;
-  background-color: #1B1F23;
+  xxbackground-color: #1B1F23;
 }
 .content-23 #bgVideo {
   overflow: hidden;
@@ -1659,10 +1659,10 @@ section * {
   filter: alpha(opacity=10);
 }
 .content-23.custom-bg {
-  background-image: url('../img/Italy_001.png');
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  xxbackground-image: url('../img/Italy_001.png');
+  xxbackground-position: 50% 50%;
+  xxbackground-repeat: no-repeat;
+  xxbackground-attachment: fixed;
 }
 .footer-3 {
   background-color: #1B1F23;
